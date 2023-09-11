@@ -25,6 +25,7 @@ form input[type="submit"]:hover {
 table {
   margin-left: auto;
   margin-right: auto;
+  border-collapse: collapse;
   margin-bottom: 40px;
   text-align: center;
   width: 20%;
