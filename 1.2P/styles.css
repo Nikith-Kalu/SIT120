@@ -1,0 +1,70 @@
+thead {
+  background-color: #ffffffaf;
+}
+
+/* Flexbox for centering */
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 80%; /* Width made relative for better responsiveness */
+  max-width: 400px;
+}
+
+p {
+  text-align: center;
+  color: #666;
+  padding-bottom: 40px;
+}
+
+/* Media query for identifying smaller devices */
+@media (max-width: 768px) {
+  h1,
+  p {
+    padding: 0 20px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  td,
+  th {
+    padding: 8px;
+    text-align: left;
+  }
+
+  body {
+    padding: 20px; /* Reduced padding for smaller screens */
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+}
