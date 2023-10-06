@@ -1,70 +1,62 @@
-thead {
-  background-color: #ffffffaf;
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Flexbox for centering */
-.center-container {
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding-left: 60px;
+}
+
+/* Sidebar */
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: start;
+  background-color: #252526;
+  padding-top: 1em;
 }
 
-form input[type="submit"] {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  display: block;
-  margin: 10px auto;
+nav a {
+  margin: 0.5em 0;
 }
 
-form input[type="submit"]:hover {
-  background-color: #45a049;
+nav svg {
+  fill: #c5c5c5;
+  width: 30px;
+  height: 30px;
+  transition: fill 0.3s;
 }
 
-table {
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: collapse;
-  margin-bottom: 40px;
-  text-align: center;
-  width: 80%; /* Width made relative for better responsiveness */
-  max-width: 400px;
+nav a:hover svg {
+  fill: #a5a5a5;
 }
 
+/* Content */
+.page-content {
+  padding: 15px;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px);
+}
+
+h2,
 p {
   text-align: center;
-  color: #666;
-  padding-bottom: 40px;
-}
-
-/* Media query for identifying smaller devices */
-@media (max-width: 768px) {
-  h1,
-  p {
-    padding: 0 20px;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  td,
-  th {
-    padding: 8px;
-    text-align: left;
-  }
-
-  body {
-    padding: 20px; /* Reduced padding for smaller screens */
-  }
-
-  h1 {
-    text-align: center;
-    color: #333;
-  }
+  margin-bottom: 1em;
 }
