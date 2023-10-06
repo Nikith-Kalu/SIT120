@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- Vue components and content will go here -->
+      <!-- Inside the <div id="app"> -->
+      <h1>Welcome to Nikith's Portfolio</h1>
+
+      <!-- Projects Table -->
+      <h2>My Projects</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- This will be populated using Vue's v-for directive -->
+        </tbody>
+      </table>
+
+      <!-- Contact Form -->
+      <h2>Contact Me</h2>
+      <form @submit.prevent="handleSubmit">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" v-model="contactName" />
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" v-model="contactMessage"></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- Vue 3 & Vue Router CDN -->
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

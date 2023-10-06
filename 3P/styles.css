@@ -1,0 +1,30 @@
+/* Basic styles, media queries, and responsive layouts will go here */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive design using media queries */
+@media (max-width: 768px) {
+  /* Styles for mobile and smaller devices */
+}
+/* ... Existing styles ... */
+
+/* Using Flexbox for responsive layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  /* Adjusting table layout for mobile devices */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+}
